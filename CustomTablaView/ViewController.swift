@@ -85,6 +85,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let height: CGFloat = 30.0
             return height
             
+        
         }else if indexPath.section == 1{
             let height: CGFloat = 150.0
             return height
