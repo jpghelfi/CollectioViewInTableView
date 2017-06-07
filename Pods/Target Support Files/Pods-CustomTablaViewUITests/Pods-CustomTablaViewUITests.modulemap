@@ -1,0 +1,6 @@
+framework module Pods_CustomTablaViewUITests {
+  umbrella header "Pods-CustomTablaViewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
