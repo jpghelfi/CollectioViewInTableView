@@ -14,6 +14,7 @@ class CellOneTableViewCell: UITableViewCell {
     
     public func setup(aLabel: String){
         labelOne.text = aLabel
+        labelOne.textColor = .white
     }
 
 }

@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 
+
 class CellCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!

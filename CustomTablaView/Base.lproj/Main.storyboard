@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--NETFLIX-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTablaView" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="30" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-OJ-loc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOne" rowHeight="30" id="GfT-iz-u1t" customClass="CellOneTableViewCell" customModule="CustomTablaView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="56" width="375" height="30"/>
@@ -40,7 +40,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="labelOne" destination="dLe-Pw-qHu" id="Q2t-NS-lp7"/>
                                         </connections>
@@ -54,7 +56,7 @@
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Ij-WS-fJG">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sd4-aJ-SxP">
                                                         <size key="itemSize" width="86" height="116"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -87,6 +89,7 @@
                                                     </cells>
                                                 </collectionView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="3Ij-WS-fJG" firstAttribute="top" secondItem="zqb-nN-wfJ" secondAttribute="top" id="1rc-rv-Ghw"/>
                                                 <constraint firstItem="3Ij-WS-fJG" firstAttribute="leading" secondItem="zqb-nN-wfJ" secondAttribute="leading" id="D0l-Eo-4q5"/>
@@ -94,6 +97,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="3Ij-WS-fJG" secondAttribute="bottom" id="gbP-M1-NON"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="collectionView" destination="3Ij-WS-fJG" id="FqB-Xt-uHi"/>
                                         </connections>
@@ -109,7 +113,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cae-OJ-loc" secondAttribute="bottom" id="cd1-yH-cda"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="snG-8G-OZi"/>
+                    <navigationItem key="navigationItem" title="NETFLIX" id="snG-8G-OZi"/>
                     <connections>
                         <outlet property="tableView" destination="Cae-OJ-loc" id="2Fy-QE-L5g"/>
                     </connections>
