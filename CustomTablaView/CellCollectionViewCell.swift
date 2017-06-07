@@ -16,9 +16,9 @@ class CellCollectionViewCell: UICollectionViewCell {
 
     func setup(image: String){
         
+//        self.backgroundColor = .white
         let url = URL(string: image)
         imageView.kf.setImage(with: url)
-        
     }
     
 }

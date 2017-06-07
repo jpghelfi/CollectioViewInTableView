@@ -251,7 +251,7 @@
 				TargetAttributes = {
 					E8150DBB1EE467D70022D2C2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = C55EP66Q7E;
+						DevelopmentTeam = BGZ8KV458T;
 						ProvisioningStyle = Automatic;
 					};
 					E8150DCF1EE467D70022D2C2 = {
@@ -617,7 +617,7 @@
 			baseConfigurationReference = CC7EB8422D06B92949D01369 /* Pods-CustomTablaView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C55EP66Q7E;
+				DEVELOPMENT_TEAM = BGZ8KV458T;
 				INFOPLIST_FILE = CustomTablaView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -632,7 +632,7 @@
 			baseConfigurationReference = 9A7844876E6E80DA49A4DD4B /* Pods-CustomTablaView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C55EP66Q7E;
+				DEVELOPMENT_TEAM = BGZ8KV458T;
 				INFOPLIST_FILE = CustomTablaView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -20,24 +20,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        if let height = self.navigationController?.navigationBar.frame.size.height{
-            
-            self.tableView.contentInset = UIEdgeInsetsMake(height,0,0,0)
-        }
+//        if let height = self.navigationController?.navigationBar.frame.size.height{
+//            
+//            self.tableView.contentInset = UIEdgeInsetsMake(height,0,0,0)
+//        }
         
         // Transparent navigation
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        self.navigationController?.navigationBar.shadowImage = UIImage()
-//        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.barTintColor = .black
         
-        navigationController?.navigationBar.barTintColor = UIColor.black
-
         self.title = "NETFLIX"
         let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.red]
         self.navigationController?.navigationBar.titleTextAttributes = titleDict as! [String : Any]
         
-        
     }
+    
+    
     
     // MARK: - TableView
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -106,7 +104,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 15.0
+        return 30.0
     }
     
     // MARK: - CollectionView
@@ -117,11 +115,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
         let collectionCell = cell as? CellCollectionViewCell
-        collectionCell?.setup(image: "https://images-na.ssl-images-amazon.com/images/I/413fcm26GQL.jpg")
+        collectionCell?.setup(image: "http://1001.com.do/wp-content/uploads/2017/03/Game-of-Thrones-Season-7-ice-dragon.jpg")
         
         return cell
     }
