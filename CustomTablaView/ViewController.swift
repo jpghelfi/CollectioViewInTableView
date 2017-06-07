@@ -20,11 +20,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-//        if let height = self.navigationController?.navigationBar.frame.size.height{
-//            
-//            self.tableView.contentInset = UIEdgeInsetsMake(height,0,0,0)
-//        }
-        
         // Transparent navigation
         self.navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.barTintColor = .black
@@ -35,17 +30,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    
-    
     // MARK: - TableView
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
         if section == 0{
-            let sectionName = "Peliculas"
-            return sectionName
+            return "Peliculas"
         
         } else if section == 1{
             return "Series"
@@ -55,19 +48,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
 //        let row = indexPath.row
 //        let section = indexPath.section
-        
 //        if section == 0 && row < labelOne.count{
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellTwo", for: indexPath)
             return cell
-
 
 //            let cell = tableView.dequeueReusableCell(withIdentifier: "cellOne", for: indexPath)
 //            let label = labelOne[indexPath.row]
