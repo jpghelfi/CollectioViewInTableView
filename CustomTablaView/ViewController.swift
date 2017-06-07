@@ -20,6 +20,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+        if let height = self.navigationController?.navigationBar.frame.size.height{
+            
+            self.tableView.contentInset = UIEdgeInsetsMake(height,0,0,0)
+        }
+        
+        // Fondo navigation.. no funca
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
+        
     }
     
     // MARK: - TableView
@@ -90,7 +101,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let height: CGFloat = 150.0
             return height
         }
-        return 30.0
+        return 15.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 15.0
     }
     
     // MARK: - CollectionView
