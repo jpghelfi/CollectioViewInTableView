@@ -25,12 +25,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.tableView.contentInset = UIEdgeInsetsMake(height,0,0,0)
         }
         
-        // Fondo navigation.. no funca
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = UIColor.clear
+        // Fondo navigation.. no funca bien
         
+        let navbarAppearance = UINavigationBar.appearance()
+        navbarAppearance.setBackgroundImage(UIImage(), for: .default)
+        navbarAppearance.shadowImage = UIImage()
+        navbarAppearance.backgroundColor = UIColor.black.withAlphaComponent(1)
     }
     
     // MARK: - TableView
